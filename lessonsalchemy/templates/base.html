@@ -10,9 +10,10 @@
 <nav>
     {% if current_user.is_authenticated %}
     <a class="btn btn-danger" href="/logout">Нажмите, чтобы выйти</a>
+    <h1>Ваше имя-id это {{ current_user.id }}</h1>
     {% else %}
     <p>
-        <a class="btn btn-success" href="/login">Войти</a>
+        <a>Mars One</a>
     </p>
     {% endif %}
 </nav>
